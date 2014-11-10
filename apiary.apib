@@ -15,14 +15,14 @@ nothig to see here.
           "id": 2, "currency": "GBP", "member": "douglas", "settledAmount": 555, "outstandingAmount": 888, "payableOrRecievable": "payable", "comments": "test"
         }]
 
-### Create a Note [POST]
+### Create some settlement data [POST]
 + Request (application/json)
 
-        { "title": "Buy cheese and bread for breakfast." }
+        { "currency": "GBP", "member": "douglas", "settledAmount": 123, "outstandingAmount": 546, "payableOrRecievable": "payable", "comments": "" }
 
 + Response 201 (application/json)
 
-        { "id": 3, "title": "Buy cheese and bread for breakfast." }
+        { "id": 1, "currency": "GBP", "member": "douglas", "settledAmount": 123, "outstandingAmount": 546, "payableOrRecievable": "payable", "comments": "" }
 
 ## Note [/notes/{id}]
 A single Note object with all its details
