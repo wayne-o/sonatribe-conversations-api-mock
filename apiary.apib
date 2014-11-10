@@ -22,7 +22,13 @@ nothig to see here.
 
 + Response 201 (application/json)
 
-        { "id": 1, "currency": "GBP", "member": "douglas", "settledAmount": 123, "outstandingAmount": 546, "payableOrRecievable": "payable", "comments": "" }
+        [{
+          "id": 1, "currency": "GBP", "member": "douglas", "settledAmount": 123, "outstandingAmount": 546, "payableOrRecievable": "payable", "comments": ""
+        },{
+          "id": 1, "currency": "GBP", "member": "douglas", "settledAmount": 123, "outstandingAmount": 546, "payableOrRecievable": "payable", "comments": ""
+        }, {
+          "id": 2, "currency": "GBP", "member": "douglas", "settledAmount": 555, "outstandingAmount": 888, "payableOrRecievable": "payable", "comments": "test"
+        }]
 
 ## SettlementData [/settlementdata/{id}]
 A single SettlementData object with all its details
