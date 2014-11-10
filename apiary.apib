@@ -6,7 +6,7 @@ nothig to see here.
 
 
 ## SettlementData Collection [/settlementdata]
-### List all Notes [GET]
+### List all SettlementData [GET]
 + Response 200 (application/json)
 
         [{
@@ -24,13 +24,13 @@ nothig to see here.
 
         { "id": 1, "currency": "GBP", "member": "douglas", "settledAmount": 123, "outstandingAmount": 546, "payableOrRecievable": "payable", "comments": "" }
 
-## Note [/notes/{id}]
-A single Note object with all its details
+## SettlementData [/settlementdata/{id}]
+A single SettlementData object with all its details
 
 + Parameters
-    + id (required, number, `1`) ... Numeric `id` of the Note to perform action with. Has example value.
+    + id (required, number, `1`) ... Numeric `id` of the SettlementData to perform action with. Has example value.
 
-### Retrieve a Note [GET]
+### Retrieve a SettlementData [GET]
 + Response 200 (application/json)
 
     + Header
@@ -39,7 +39,7 @@ A single Note object with all its details
 
     + Body
 
-            { "id": 2, "title": "Pick-up posters from post-office 7" }
+             { "id": 1, "currency": "GBP", "member": "douglas", "settledAmount": 123, "outstandingAmount": 546, "payableOrRecievable": "payable", "comments": "" }
 
-### Remove a Note [DELETE]
+### Remove a SettlementData [DELETE]
 + Response 204
