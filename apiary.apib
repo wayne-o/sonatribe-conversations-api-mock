@@ -1,20 +1,18 @@
 FORMAT: 1A
-HOST: http://www.google.com
+HOST: http://www.test.com
 
-# sonatribe-conversations
-Notes API is a *short texts saving* service similar to its physical paper presence on your table.
+# fake settlement data
+nothig to see here.
 
-# Group Notes
-Notes related resources of the **Notes API**
 
-## Notes Collection [/notes]
+## SettlementData Collection [/settlementdata]
 ### List all Notes [GET]
 + Response 200 (application/json)
 
         [{
-          "id": 1, "title": "Jogging in park 212"
+          "id": 1, "currency": "GBP", "member": "douglas", "settledAmount": 123, "outstandingAmount": 546, "payableOrRecievable": "payable", "comments": ""
         }, {
-          "id": 2, "title": "Pick-up posters from post-office 6"
+          "id": 2, "currency": "GBP", "member": "douglas", "settledAmount": 555, "outstandingAmount": 888, "payableOrRecievable": "payable", "comments": "test"
         }]
 
 ### Create a Note [POST]
